@@ -1,0 +1,871 @@
+Iterator<String> iter = alpha.iterator();
+        while(iter.hasNext()){
+            System.out.print(iter.next() + " ");
+        }
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+class Student
+{
+	private int count;
+
+	/**
+	 * @return the count
+	 */
+	public int getCount() {
+		return count;
+	}
+
+	/**
+	 * @param count the count to set
+	 */
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
+}
+class data
+{
+	private String na;
+	private int ku;
+	private int su;
+	private int hab;
+	private int ave;
+	
+	/**
+	 * @return the na
+	 */
+	public String getNa() {
+		return na;
+	}
+
+	/**
+	 * @param na the na to set
+	 */
+	public void setNa(String na) {
+		this.na = na;
+	}
+
+	/**
+	 * @return the ku
+	 */
+	public int getKu() {
+		return ku;
+	}
+
+	/**
+	 * @param ku the ku to set
+	 */
+	public void setKu(int ku) {
+		this.ku = ku;
+	}
+
+	/**
+	 * @return the su
+	 */
+	public int getSu() {
+		return su;
+	}
+
+	/**
+	 * @param su the su to set
+	 */
+	public void setSu(int su) {
+		this.su = su;
+	}
+
+	/**
+	 * @return the hab
+	 */
+	public int getHab() {
+		return ku+su;
+	}
+
+	/**
+	 * @param hab the hab to set
+	 */
+	public void setHab(int hab) {
+		this.hab = hab;
+	}
+
+	/**
+	 * @return the ave
+	 */
+	public int getAve() {
+		return (ku+su)/2;
+	}
+
+	/**
+	 * @param ave the ave to set
+	 */
+	public void setAve(int ave) {
+		this.ave = ave;
+	}
+
+	public data(String na, int ku, int su, int hab, int ave) {
+		this.na = na;
+		this.ku = ku;
+		this.su = su;
+		this.hab = hab;
+		this.ave = ave;
+	}
+
+	public data() {}
+	
+	}
+
+
+
+	
+	
+	
+	
+	
+
+public class KoaJae {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet q = new LinkedHashSet();
+		data d = new data();
+		Scanner f = new Scanner(System.in);
+		int z = 0;
+		while(true)
+		{
+		System.out.println("무엇을 하시겠습니까? 1.입력 2.출력 3.검색 4.삭제 5.종료");
+		z = f.nextInt();
+		if(z==1)
+		{
+		System.out.println("이름을 입력하세요.");
+		d.setNa(f.next());
+		System.out.println("국어점수를 입력하세요");
+		d.setKu(f.nextInt());
+		System.out.println("수학점수를 입력하세요");
+		d.setSu(f.nextInt());
+		
+		int[] h = new int[100];
+		
+		
+		System.out.println(d.getNa());
+		System.out.println(d.getKu());
+		System.out.println(d.getSu());
+		System.out.println(d.getHab());
+		System.out.println(d.getAve());
+		
+		q.add(d.getNa());
+		q.add(d.getKu());
+		q.add(d.getSu());
+		q.add(d.getHab());
+		q.add(d.getAve());
+		
+		System.out.println(q);
+		}
+		if(z==2)
+		{
+			
+		}
+		if(z==3)
+		{
+			
+		}
+		if(z==4)
+		{
+			
+		}
+		if(z==5)
+		{
+			break;
+		}
+		}
+	}
+	}
+=====================
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+class Student
+{
+	private int count;
+
+	/**
+	 * @return the count
+	 */
+	public int getCount() {
+		return count;
+	}
+
+	/**
+	 * @param count the count to set
+	 */
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
+}
+class data
+{
+	private String na;
+	private int ku;
+	private int su;
+	private int hab;
+	private int ave;
+	
+	/**
+	 * @return the na
+	 */
+	public String getNa() {
+		return na;
+	}
+
+	/**
+	 * @param na the na to set
+	 */
+	public void setNa(String na) {
+		this.na = na;
+	}
+
+	/**
+	 * @return the ku
+	 */
+	public int getKu() {
+		return ku;
+	}
+
+	/**
+	 * @param ku the ku to set
+	 */
+	public void setKu(int ku) {
+		this.ku = ku;
+	}
+
+	/**
+	 * @return the su
+	 */
+	public int getSu() {
+		return su;
+	}
+
+	/**
+	 * @param su the su to set
+	 */
+	public void setSu(int su) {
+		this.su = su;
+	}
+
+	/**
+	 * @return the hab
+	 */
+	public int getHab() {
+		return ku+su;
+	}
+
+	/**
+	 * @param hab the hab to set
+	 */
+	public void setHab(int hab) {
+		this.hab = hab;
+	}
+
+	/**
+	 * @return the ave
+	 */
+	public int getAve() {
+		return (ku+su)/2;
+	}
+
+	/**
+	 * @param ave the ave to set
+	 */
+	public void setAve(int ave) {
+		this.ave = ave;
+	}
+
+	public data(String na, int ku, int su, int hab, int ave) {
+		this.na = na;
+		this.ku = ku;
+		this.su = su;
+		this.hab = hab;
+		this.ave = ave;
+	}
+
+	public data() {}
+	
+	}
+
+
+
+	
+	
+	
+	
+	
+
+public class KoaJae {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet q = new LinkedHashSet();
+		data d = new data();
+		Scanner f = new Scanner(System.in);
+		int z = 0;
+		while(true)
+		{
+		System.out.println("무엇을 하시겠습니까? 1.입력 2.출력 3.검색 4.삭제 5.종료");
+		z = f.nextInt();
+		if(z==1)
+		{
+		System.out.println("이름을 입력하세요.");
+		d.setNa(f.next());
+		System.out.println("국어점수를 입력하세요");
+		d.setKu(f.nextInt());
+		System.out.println("수학점수를 입력하세요");
+		d.setSu(f.nextInt());
+		
+		int[] h = new int[100];
+		
+		
+		System.out.println(d.getNa());
+		System.out.println(d.getKu());
+		System.out.println(d.getSu());
+		System.out.println(d.getHab());
+		System.out.println(d.getAve());
+		
+		q.add(d.getNa());
+		q.add(d.getKu());
+		q.add(d.getSu());
+		q.add(d.getHab());
+		q.add(d.getAve());
+		
+		
+		
+		System.out.println(q);
+		}
+		if(z==2)
+		{
+			
+		}
+		if(z==3)
+		{
+			
+		}
+		if(z==4)
+		{
+			
+		}
+		if(z==5)
+		{
+			break;
+		}
+		}
+	}
+	}
+===========
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+class Student
+{
+	private int count;
+
+	/**
+	 * @return the count
+	 */
+	public int getCount() {
+		return count;
+	}
+
+	/**
+	 * @param count the count to set
+	 */
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
+}
+class data
+{
+	private String na;
+	private int ku;
+	private int su;
+	private int hab;
+	private int ave;
+	
+	/**
+	 * @return the na
+	 */
+	public String getNa() {
+		return na;
+	}
+
+	/**
+	 * @param na the na to set
+	 */
+	public void setNa(String na) {
+		this.na = na;
+	}
+
+	/**
+	 * @return the ku
+	 */
+	public int getKu() {
+		return ku;
+	}
+
+	/**
+	 * @param ku the ku to set
+	 */
+	public void setKu(int ku) {
+		this.ku = ku;
+	}
+
+	/**
+	 * @return the su
+	 */
+	public int getSu() {
+		return su;
+	}
+
+	/**
+	 * @param su the su to set
+	 */
+	public void setSu(int su) {
+		this.su = su;
+	}
+
+	/**
+	 * @return the hab
+	 */
+	public int getHab() {
+		return ku+su;
+	}
+
+	/**
+	 * @param hab the hab to set
+	 */
+	public void setHab(int hab) {
+		this.hab = hab;
+	}
+
+	/**
+	 * @return the ave
+	 */
+	public int getAve() {
+		return (ku+su)/2;
+	}
+
+	/**
+	 * @param ave the ave to set
+	 */
+	public void setAve(int ave) {
+		this.ave = ave;
+	}
+
+	public data(String na, int ku, int su, int hab, int ave) {
+		this.na = na;
+		this.ku = ku;
+		this.su = su;
+		this.hab = hab;
+		this.ave = ave;
+	}
+
+	public data() {}
+	
+	}
+
+
+
+	
+	
+	
+	
+	
+
+public class KoaJae {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet<data> q = new LinkedHashSet<data>();
+		data d = new data();
+		Scanner f = new Scanner(System.in);
+		int z = 0;
+		while(true)
+		{
+		System.out.println("무엇을 하시겠습니까? 1.입력 2.출력 3.검색 4.삭제 5.종료");
+		z = f.nextInt();
+		if(z==1)
+		{
+		System.out.println("이름을 입력하세요.");
+		d.setNa(f.next());
+		System.out.println("국어점수를 입력하세요");
+		d.setKu(f.nextInt());
+		System.out.println("수학점수를 입력하세요");
+		d.setSu(f.nextInt());
+		
+		int[] h = new int[100];
+		
+		
+		
+		q.add(d);
+		
+		System.out.println(q);
+		}
+		if(z==2)
+		{
+			
+		}
+		if(z==3)
+		{
+			
+		}
+		if(z==4)
+		{
+			
+		}
+		if(z==5)
+		{
+			break;
+		}
+		}
+	}
+	}
+
+===========
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+class Student
+{
+	private int count;
+
+	/**
+	 * @return the count
+	 */
+	public int getCount() {
+		return count;
+	}
+
+	/**
+	 * @param count the count to set
+	 */
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
+}
+class data
+{
+	private String na;
+	private int ku;
+	private int su;
+	private int hab;
+	private int ave;
+	
+	/**
+	 * @return the na
+	 */
+	public String getNa() {
+		return na;
+	}
+
+	/**
+	 * @param na the na to set
+	 */
+	public void setNa(String na) {
+		this.na = na;
+	}
+
+	/**
+	 * @return the ku
+	 */
+	public int getKu() {
+		return ku;
+	}
+
+	/**
+	 * @param ku the ku to set
+	 */
+	public void setKu(int ku) {
+		this.ku = ku;
+	}
+
+	/**
+	 * @return the su
+	 */
+	public int getSu() {
+		return su;
+	}
+
+	/**
+	 * @param su the su to set
+	 */
+	public void setSu(int su) {
+		this.su = su;
+	}
+
+	/**
+	 * @return the hab
+	 */
+	public int getHab() {
+		return ku+su;
+	}
+
+	/**
+	 * @param hab the hab to set
+	 */
+	public void setHab(int hab) {
+		this.hab = hab;
+	}
+
+	/**
+	 * @return the ave
+	 */
+	public int getAve() {
+		return (ku+su)/2;
+	}
+
+	/**
+	 * @param ave the ave to set
+	 */
+	public void setAve(int ave) {
+		this.ave = ave;
+	}
+
+	public data(String na, int ku, int su, int hab, int ave) {
+		this.na = na;
+		this.ku = ku;
+		this.su = su;
+		this.hab = hab;
+		this.ave = ave;
+	}
+
+	public data() {}
+	
+	}
+
+
+
+	
+	
+	
+	
+	
+
+public class KoaJae {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet q = new LinkedHashSet();
+		data d = new data();
+		data vo = null;
+		Scanner f = new Scanner(System.in);
+		int z = 0;
+		while(true)
+		{
+		System.out.println("무엇을 하시겠습니까? 1.입력 2.출력 3.검색 4.삭제 5.종료");
+		z = f.nextInt();
+		if(z==1)
+		{
+			String w;
+			int g,h,j,k;
+		System.out.println("이름을 입력하세요.");
+		w = f.next();
+		System.out.println("국어점수를 입력하세요");
+		g = f.nextInt();
+		System.out.println("수학점수를 입력하세요");
+		h = f.nextInt();
+		
+		new vo(w,g,h,d.get)
+		
+		
+		q.add(d.getNa());
+		q.add(d.getKu());
+		q.add(d.getSu());
+		q.add(d.getHab());
+		q.add(d.getAve());
+		
+		
+		}
+		if(z==2)
+		{
+			System.out.println(q);
+		}
+		if(z==3)
+		{
+			
+		}
+		if(z==4)
+		{
+			
+		}
+		if(z==5)
+		{
+			break;
+		}
+		}
+	}
+	}
+
+===========
+import java.util.HashSet;
+import java.util.Scanner;
+
+class data
+{
+	Scanner scan = new Scanner(System.in);
+
+    HashSet<String> hs = new HashSet<String>();
+
+   
+
+    public void Run(){
+
+           int key = 0;
+
+           while((key = selectMenu())!=0){
+
+                   switch(key){
+
+                   case 1: addMember(); break;
+
+                   case 2: removeMember(); break;
+
+                   case 3: searchMember(); break;
+
+                   case 4: listMember(); break;
+
+                   default: System.out.println("잘못 선택하였습니다."); break;
+
+                   }
+
+           }
+
+           System.out.println("종료합니다...");
+
+    }
+
+    int selectMenu(){
+
+           System.out.println("1:추가 2:삭제 3:검색 4:목록 0:종료");
+
+           int key = scan.nextInt();
+
+           scan.nextLine();
+
+           return key;
+
+    }
+
+    void addMember(){              
+
+           String name="";        
+
+           System.out.print("추가할 회원 이름:");
+
+           name = scan.nextLine();
+
+            
+
+           if(hs.add(name)){
+
+                   System.out.println("추가하였습니다.");
+
+           }
+
+           else{
+
+                   System.out.println("이미 존재합니다.");
+
+           }
+
+    }
+
+    void removeMember(){
+
+           String name="";        
+
+           System.out.print("삭제할 회원 이름:");
+
+           name = scan.nextLine();
+
+            
+
+           if(hs.remove(name)){
+
+                   System.out.println("삭제하였습니다.");
+
+           }
+
+           else{
+
+                   System.out.println("존재하지 않습니다.");
+
+           }
+
+    }
+
+    void searchMember(){
+
+           String name="";        
+
+           System.out.print("검색할 회원 이름:");
+
+           name = scan.nextLine();
+
+            
+
+           if(hs.contains(name)){
+
+                   System.out.println("존재합니다.");
+
+           }
+
+           else{
+
+                   System.out.println("존재하지 않습니다.");
+
+           }      
+
+    }
+
+    void listMember(){
+
+           System.out.println("전체 목록");
+
+           int cnt = hs.size();
+
+           System.out.println("회원 수:"+cnt);
+
+           for(String name: hs){
+
+                   System.out.println(name);
+
+           }
+
+    }             
+
+
+}
+public class Hawe {
+
+
+		public static void main(String[] args){
+
+			data tracer = new data();
+
+            tracer.Run();
+
+
+
+
+	}
+
+}
